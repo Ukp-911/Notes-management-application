@@ -10,19 +10,36 @@ const Homepage = () => {
 	const [titleError,settitleError]=useState(false)
 	const [contError,setcontError] =useState(false)
 
+	const dispatch = useDispatch()
 	const notify=()=>{
-		toast("new paste created")
+		toast("new paste created",{
+			duration:1000
+		})
+	}
+	const errnotify=()=>{
+		toast("enter all the fields",{
+			duration:1000
+		})
 	}
 	const handlecreatepst = (e) => {
 		e.preventDefault()
 		if (title===""){
 			settitleError(true)
 		}
-		else if (content===""){
+		if (content===""){
 			setcontError(true)
 		}
 		if (title!==""&&content!==""){
+			const pastedata={
+				title,
+				content,
+				id: Date.now()
+			};
+			dispatch(addpaste(pastedata))
 			notify()
+		}
+		else{
+			errnotify()
 		}
 	}
 
@@ -35,7 +52,7 @@ const Homepage = () => {
 
 	const handletextchnge = (e) => {
 		setcontent(e.target.value)
-		if (setcontent!==""){
+		if (content!==""){
 			setcontError(false)
 		}
 	}
