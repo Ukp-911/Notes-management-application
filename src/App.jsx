@@ -5,6 +5,7 @@ import Viewpastes from './components/Viewpastes.jsx'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Layout from './components/Layout.jsx'
 import { Toaster } from "react-hot-toast"
+import Btn from './btncomponents/btncomps.jsx'
 
 function Todo2() {
 	const routes = createBrowserRouter([

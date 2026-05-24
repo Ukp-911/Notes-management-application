@@ -10,7 +10,7 @@ const pasteslice = createSlice({
         addpaste: (state, action) => {
             state.value.push(action.payload)
             localStorage.setItem('pastes',JSON.stringify(state.value))
-            // localStorage.clear( )
+            // localStorage.clear()
         },
         deletepaste: (state, action) => {
 

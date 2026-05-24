@@ -56,8 +56,9 @@ const Homepage = () => {
 			setcontError(false)
 		}
 	}
+	
 	return (
-		<>
+		<>	
 			<div className='home'>
 				<input id='ukp' type="text" placeholder='Enter your title' onChange={handleinpchnge}
 				style={{
