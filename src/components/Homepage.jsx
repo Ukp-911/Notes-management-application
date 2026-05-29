@@ -37,6 +37,8 @@ const Homepage = () => {
 			};
 			dispatch(addpaste(pastedata))
 			notify()
+			settitle("")
+			setcontent("")
 		}
 		else{
 			errnotify()
@@ -58,9 +60,11 @@ const Homepage = () => {
 	}
 	
 	return (
-		<>	
+		<>
+				
 			<div className='home'>
 				<input id='ukp' type="text" placeholder='Enter your title' onChange={handleinpchnge}
+				value={title}
 				style={{
 					borderColor : titleError ? "red":""
 				}}/>
@@ -68,6 +72,7 @@ const Homepage = () => {
 			</div>
 			<div className="text">
 				<textarea id='pkp' placeholder='Likh na Maderchod' onChange={handletextchnge}
+				value={content}
 				style={{
 					borderColor : contError? "red":""
 				}} />

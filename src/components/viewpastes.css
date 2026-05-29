@@ -81,3 +81,16 @@
     filter: blur(4px);
     pointer-events: none;
 }
+
+.empty-state {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    opacity: 0.5;
+}
+
+.empty-state h2 {
+    color: white;
+    font-size: 1.5rem;
+}

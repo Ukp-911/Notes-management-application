@@ -19,13 +19,13 @@ const btncomps = ({config}) => {
     const [contError, setcontError] = useState(false)
 
     const notify = () => {
-        toast("paste updated", { duration: 1000 })
+        toast("Note updated", { duration: 1000 })
     }
     const errnotify = () => {
-        toast("enter all the fields", { duration: 1000 })
+        toast("Enter all the fields", { duration: 1000 })
     }
     const nochangenotify=()=>{
-        toast("no changes made",{ duration: 1000 })
+        toast("No changes made",{ duration: 1000 })
     }
 
     const updatedatasdick={

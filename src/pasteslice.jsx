@@ -11,7 +11,12 @@ const pasteslice = createSlice({
             localStorage.setItem('pastes',JSON.stringify(state.value))
         },
         deletepaste: (state, action) => {
-
+            const newval =state.value.filter(item=>{
+                return item.id !== action.payload
+            })
+            state.value=newval
+            localStorage.setItem('pastes', JSON.stringify(state.value))
+            
         },
         updatepaste: (state, action) => {
             const req=state.value.findIndex(item=>item.id===action.payload.id)
@@ -22,3 +27,5 @@ const pasteslice = createSlice({
 })
 export const { addpaste, deletepaste, updatepaste } = pasteslice.actions
 export default pasteslice.reducer
+
+// console.log(JSON.parse(JSON.stringify(newval)))

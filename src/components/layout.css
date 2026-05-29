@@ -1,12 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.childdiv{
-    /* border: 2px solid red; */
+
+.childdiv {
     margin-top: 20px;
     width: 90rem;
     margin-left: 4rem;
     min-height: 40rem;
+}
+
+.main-heading {
+    text-align: center;
+    margin: 2.5rem 0 2rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.main-heading span {
+    color: rgba(255, 255, 255, 0.4);
 }
