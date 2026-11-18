@@ -68,7 +68,7 @@ const Homepage = () => {
 				style={{
 					borderColor : titleError ? "red":""
 				}}/>
-				<button onClick={handlecreatepst}>Create Paste</button>
+				<button onClick={handlecreatepst}>Create Note</button>
 			</div>
 			<div className="text">
 				<textarea id='pkp' placeholder='Write Your Notes' onChange={handletextchnge}
