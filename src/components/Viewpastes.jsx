@@ -42,7 +42,7 @@ const Viewpastes = () => {
             )}
 
             <div className={view || update ? "blurred" : ""}>
-                <h1 className="heading">All Pastes</h1>
+                <h1 className="heading">All Notes</h1>
                 <div className="paste-wrapper">
                     {dummyPastes.length === 0 ? (
                         <div className="empty-state">
