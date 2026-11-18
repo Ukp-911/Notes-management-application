@@ -71,7 +71,7 @@ const Homepage = () => {
 				<button onClick={handlecreatepst}>Create Paste</button>
 			</div>
 			<div className="text">
-				<textarea id='pkp' placeholder='Likh na Maderchod' onChange={handletextchnge}
+				<textarea id='pkp' placeholder='Write Your Notes' onChange={handletextchnge}
 				value={content}
 				style={{
 					borderColor : contError? "red":""
